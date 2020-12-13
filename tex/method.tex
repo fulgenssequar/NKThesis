@@ -1,6 +1,10 @@
 % !TeX root = ../main.tex
 % -*- coding: utf-8 -*-
-
+\documentclass[12pt,openright]{book}
+\usepackage[emptydoublepage]{NKThesis}   % 中文
+\addbibresource{nkthesis.bib}
+\graphicspath{{image/}}
+\begin{document}
 \chapter{常用包}
 \label{chpt:method}
 
@@ -85,3 +89,4 @@ function a = factorial(n)
         a=n * factorial(n-1);
     end
 \end{lstlisting}
+\end{document}
