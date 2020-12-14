@@ -50,7 +50,7 @@ xelatex main
 * 新加入standalone包，/tex/*.tex 为改为完整latex文件，方便预览和单章编译
 * 推荐使用以下命令（需首先从melpa安装）:
 ```elisp
-(mapc 'eval '((linum-mode) (show-paren-mode) (flyspell-mode) (cdlatex-mode 1) (undo-tree-mode) (outline-minor-mode) (reftex-mode) (setq Tex-Engine 'xetex) (insert "\n%OK")))
+(mapc 'eval '((linum-mode) (show-paren-mode) (flyspell-mode) (cdlatex-mode 1) (undo-tree-mode) (outline-minor-mode) (reftex-mode) (setq TeX-engine 'xetex) (insert "\n%OK")))
 ```
 * C-h v TeX-engine 点击菜单，设置为 'xetex
 * C-c C-c latex
