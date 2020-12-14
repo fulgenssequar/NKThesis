@@ -47,8 +47,8 @@ xelatex main
 
 ### Emacs 推荐配置：
 
-* 新加入standalone包，/tex/*.tex 为改为完整latex文件，方便预览和单章编译
-* 推荐使用以下命令（需首先从melpa安装）:
+* 新加入standalone包，/tex/*.tex 改为完整latex文档，方便 Emacs 中预览和单章编译
+* 推荐使用以下命令（部分命令需先从melpa安装）:
 ```elisp
 (mapc 'eval '((linum-mode) (show-paren-mode) (flyspell-mode) (cdlatex-mode 1) (undo-tree-mode) (outline-minor-mode) (reftex-mode) (setq TeX-engine 'xetex) (insert "\n%OK")))
 ```
