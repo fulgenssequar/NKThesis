@@ -686,9 +686,19 @@
     \NKT@restoreCJK
     \pagestyle{empty}
     \@twosidefalse
-    \NKTtitlepage
-    \NKTauthorization
-    \NKTdeclaration
+ 
+    % NOTE: modificated:
+    \ifx\blindcover\undefined
+        \NKTtitlepage
+        \NKTauthorization
+        \NKTdeclaration
+    \else
+        \blindcover
+    \fi
+
+%    \NKTtitlepage
+%    \NKTauthorization
+%    \NKTdeclaration
     \clearpage
     \ifx\NKT@key@lunwenleibie\NKT@string@boshi
       \global\@twosidetrue
