@@ -37,7 +37,11 @@
 	./tex/resume
 }
 \begin{document}
-
+%  \newcommand\blindcover{
+\newcommand\blindcoverNAI{
+  % 将如下文件插入为盲审封面。如果注释掉此函数或将 \blindcover 改名，则插入正常封面。
+  \includepdf[pages={1}]{blindcover.pdf}    
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  设置基本信息
 %  注意:  逗号`,'是项目分隔符. 如果某一项的值出现逗号, 应放在花括号内, 如 {,}
